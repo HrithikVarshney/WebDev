@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/youtube.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+</head>
+<body>
+    <!----<h1,2,3,4,5,6> tags are used to give headings to our webpages
+    <h2>Your heading</h2>-->
+    
+    <h1>This is my first html page</h1>
+
+    <!--<hr> tag.....this tag is used to add horizontal line on our content i.e; it acts as a divider-->
+    <hr>
+
+    <!--<p> tag....This tag is used for adding paragraphs to our webpages
+    it adds automatic spacing between multiple p tags
+    <p>Your Content in form of paragraph</p>-->
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi corrupti quia inventore nemo ratione! Accusantium, dolorum distinctio possimus magnam voluptatem voluptas deleniti, corrupti obcaecati necessitatibus laborum numquam aperiam, nam sint!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A modi expedita dolorem recusandae dolorum magnam odit doloremque, ullam ad. Nostrum amet tempora porro, labore expedita sit? Voluptas sapiente sint corporis?</p>
+
+
+    <!--<br> tag.....This tag is used to add break in a line.<br> tag dont have closing tag
+    we can use either <br> or <br/> to add break in line-->
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptatibus. <br> Culpa esse adipisci veritatis vero cupiditate omnis nobis delectus <br> quibusdam perferendis commodi nostrum porro nulla, ipsa dolorem aliquam natus cum?</p>
+
+
+    <!--<image> tag is used to add images to our webpages , we use 'src' here to add the source from the image is to be fetched , we use 'alt' here to add an alternative text if image dont get upload, we can customize our image by adding height and width to our image in px , <image> tag is self closing so no need to add closing tag in it-->
+
+    <img src = "images/hrithik.jpg" alt="Hrithik Varshney" width="300px" height="280px">
+
+    <a href="https://www.google.com" title="Go to Google Website"><img src = "https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2022/06/cropped-microsoft_logo_element.png" alt="Dream Company" width="300px" height="280px"></a>
+
+    
+    <!--<video> tag is used to add videos to our webpages and it has many functions inbuild like autoplay , controls , loop etc-->
+
+    <video src="videos/pexels_videos_1572442 (1440p).mp4" autoplay="false" controls loop height="300px" width="400px"></video>
+
+    <!--<a> tag is anchor tag , it is used for creating hyperlinks , href attribute is for URL , target attribute is used to control link behaviour whether to open link on new page or on the same page etc-->
+
+    <a href="https://www.youtube.com" target="_blank"><h1>Youtube</h1></a>  
+    
+    <!--<b></b> bold tag is used to make text bold-->
+    <b>Hrithik Varshney</b><hr>
+    <!--<i></i> italic tag is used to make text italic-->
+    <i>Hrithik Varshney</i><hr>
+    <!--<u></u> underline tag is used to make text underline-->
+    <u>Hrithik Varshney</u>
+
+    <!--<pre></pre> tag is used for preserves text formatting that it maintains whitespace and line breaks , in <p> tag if we add linebreaks and spaces then it remains same but using pre tag we can have our content based on our formatting like how much spaces we want and how many line breaks etc -->
+
+    <pre>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        
+    Porro voluptatem ab ex velit quia libero adipisci aliquam laboriosam, ipsum facere dolore
+    
+        reiciendis recusandae vero impedit error minus voluptate accusamus
+        
+    dolorum.</pre>
+
+
+    <!--<sub></sub> make text subscript-->
+    <p>CH<sub>4</sub> + O<sub>2</sub> => H<sub>2</sub>O + CO<sub>2</sub></p>
+
+    <!--<sup></sup> make text superscript-->
+    <p>(a + b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab </p>
+
+
+
+    <!--Image Map is used to add feature to our image so that if user clicks on a particular portion of an image then it may link it to any other website that is linking to different websites on clicking different portions of an image-->
+    <img src="images/SAMPLE.png" alt="companies" usemap="#mymap">
+
+    <map name="mymap">
+
+        <area shape="rect" coords="10,11 , 116,50" href="https://www.facebook.com" alt="facebook" title="Go to Facebook!!">
+
+        <area shape="circle" coords="145,141 42," href="https://www.yahoo.com" alt="yahoo" title="Go to Yahoo!!">
+
+    </map>  
+
+
+
+    <!--HTML Tables-->
+
+    <table>
+        <caption>Placement Statistics</caption>
+        <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Package</th>
+        </tr>
+
+        <tr>
+            <td>Hrithik Varshney</td>
+            <td>Microsoft</td>
+            <td>52 Lpa</td>
+        </tr>
+
+        <tr>
+            <td>Deepak kumar</td>
+            <td>Atlassian</td>
+            <td>30 Lpa</td>
+        </tr>
+        <tr>
+            <td>Vikas Kumar Singh</td>
+            <td>Morgan Stanley</td>
+            <td>45 Lpa</td>
+        </tr>
+        <tr>
+            <td>Rohit Kumawat</td>
+            <td>American Express</td>
+            <td>27 Lpa</td>
+        </tr>
+    </table>
+
+
+    <!--HTML Lists-->
+    <!--Unordered Lists-->
+    <ul>
+        <li>Bread</li>
+        <li>Butter</li>
+        <li>Milk</li>
+    </ul>
+
+    <!--Ordered Lists-->
+    <ol type="a" >
+        <li>Masala Dosa</li>
+            <ul>
+                <li>Sambhar</li>
+                <li>Coconut Chatni</li>
+                <li>Aloo Fry</li>
+            </ul>
+        <li>Bhaji Pav</li>
+        <li>Sandwich</li>
+    </ol>
+
+    <!--Description Lists-->
+    <dl >
+        <dt>Coffee</dt>
+        <dd>- Black Hot Drink</dd>
+        <dt>Almond Milk</dt>
+        <dd>- Healthy Drink</dd>
+        <dt>Coke</dt>
+        <dd>- Drink loaded with sugars</dd>
+    </dl>
+
+
+
+    <!--Block Level Elements: it always starts on a new line and browser automatically add some space before and after the element and it always takes up the full width of the webpage-->
+
+    <!--Examples:- <p> , <div>, <form> , <table> , <ol> , <ul> , <pre> etc are block level elements-->
+
+    <!--Inline Elements: it does not start on a new line and it only takes up as much width as necessary-->
+
+    <!--Examples:- <span> , <a>, <i> , <map> , <sub> , <sup> , <br> etc are Inline Elements-->
+
+
+    <!--<div> element:- it is often used as a container for other HTML Elements-->
+    
+    <div style="background-color:rgb(42, 112, 5);color:white;padding:15px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+
+
+    <!--<span> Element:- it is inline container used up to mark up a part of a text or a part of document-->
+    
+    <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:rgb(255, 159, 75);font-weight:bold;">brown</span> eyes.</p>
+
+
+    <!--class attribute is used to specify a class for an HTML Element , Multiple HTML Elements can share the same class , it is used by CSS and JAVASCRIPT to select and access specific elements , class attribute can be used on any HTML Element-->
+
+    <!--
+    <h2 class="city main">London</h2>
+    <h2 class="city">Paris</h2>-->
+
+
+    <!--id attribute:- it is used to specify a unique id for an HTML Element , there cant be more than one element with same ID in HTML Document-->
+
+    <!--
+    <h1 id="myHeader">My Cities</h1>-->
+
+
+    <!--<iframe> tag is used to display a web page within a webpage-->
+
+    <iframe src="https://www.wikipedia.com" height="400" width="600" style="border: none ;" title="Iframe Example"></iframe>
+
+    <!--it can also be used as target for a link that is target attribute must refer to name attribute of the iframe-->
+
+    <iframe name="iframe_a"></iframe>
+
+    <p><a href="https://www.wikipedia.com" target="iframe_a">Wikipedia</a></p>
+
+
+    <!--Semantics Elements :- Elements with a meaning that are <header>,<nav>,<section>,<article>,<aside>,<footer>-->
+
+    <!--HTML Forms-->
+
+    <form>
+
+        <!--Attributes used inside form tag-->
+
+        <!--action attribute specifies where to send the form data when a form is submitted , here we specify the link where to submit the data-->
+
+        <!--target attributes specifies where to display the response that is received-->
+
+
+        <!--autocomplete attribute is used if user filled some data then filling the form again , user get suggestions of data to fill in the form-->
+
+
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br>
+
+        <label for="quantity">Quantity (between 1 and 50):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="50"><br>
+
+        <!--<label> tag defines label for form elements , for attribute of label tag should be equal to the id attribute of input element to bind them together-->
+        <label for="fname">First Name:</label><br>
+
+        <!--name attribute should be there with each input field , if it is omitted then value of input field will not be submitted at all-->
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <input type="radio" name="fav_language" id="html" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" name="fav_language" id="css" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <!--value attribute specifies an initial value for an input field-->
+
+        <input type="radio" name="fav_language" id="javascript" value="JAVASCRIPT">
+        <label for="javascript">JAVASCRIPT</label><br>
+
+        <input type="submit" value="Submit"><br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br>
+
+        <textarea name="message" style="width:200px; height:600px;">
+            The cat was playing in the garden.
+            The textarea element defines a multi-line input field (a text area)
+            The rows attribute specifies the visible number of lines in a text area.The cols attribute specifies the visible width of a text area.
+        </textarea><br>
+
+        <button type="button" onclick="alert('Hello Hrithik!!')"> Click Me!</button><br>
+
+
+        <input list="browsers">
+
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+
+
+
+    </form>
+
+
+
+</body>
+</html>
